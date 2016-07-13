@@ -1,0 +1,31 @@
+﻿@model WorkerSkills.Models.WorkerSkillGridViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@foreach (var group in Model.WorkerGroups)
+{
+    <div class="row">
+        @foreach (var worker in group)
+        {
+            <div class="col-md-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        @worker.Title - @worker.Name
+                    </div>
+                    <div class="panel-body">
+                        <img src="@Url.Content("Content/Images/Workers/" + worker.Title + ".png")" alt="@worker.Title" style="max-height:165px" />
+                    </div>
+                    <div class="panel-footer">
+                        @foreach (var skill in worker.Skills)
+                        {
+                            <img src="@Url.Content("Content/Images/Skills/" + skill.Name.Replace(" ", "_") + ".png")" alt="@skill.Name" />
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
