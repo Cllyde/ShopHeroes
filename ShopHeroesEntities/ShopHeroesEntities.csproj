@@ -62,6 +62,18 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\dbo.Hero.Table.sql" />
+    <Content Include="Scripts\dbo.HeroItemType.Table.sql" />
+    <Content Include="Scripts\dbo.HeroType.Table.sql" />
+    <Content Include="Scripts\dbo.ItemType.Table.sql" />
+    <Content Include="Scripts\dbo.Skill.Table.sql" />
+    <Content Include="Scripts\dbo.vwHeroes.View.sql" />
+    <Content Include="Scripts\dbo.vwWorkers.View.sql" />
+    <Content Include="Scripts\dbo.Worker.Table.sql" />
+    <Content Include="Scripts\dbo.WorkerSkill.Table.sql" />
+    <Content Include="Scripts\ShopHeroes.Database.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
