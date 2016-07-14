@@ -50,6 +50,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Hero.cs" />
+    <Compile Include="HeroItemType.cs" />
+    <Compile Include="HeroType.cs" />
+    <Compile Include="ItemType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShopHeroesModel.cs" />
     <Compile Include="Skill.cs" />
