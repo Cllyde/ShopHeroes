@@ -10,8 +10,7 @@ namespace WorkerSkills.Controllers
     {
         public ActionResult Index()
         {
-            return RedirectToAction("Index", "Workers");
-            //return View();
+            return View();
         }
 
         public ActionResult About()
